@@ -1,54 +1,61 @@
-* {
+
+/* Copyright Colin Hiriak 2015 */
+
+*{
     font-family: sans-serif;
    
 }
 
 html {
-    background-image: url('../images/bats.gif');
+  background-image: url('../images/bats.gif');
 }
 
 header {
-    border-bottom: 1px solid black;
-    background: linear-gradient(to bottom left, black, orange, white);
+  border-bottom: 1px solid black;
+  background: linear-gradient(to bottom left, black, orange, white);
 }
 
 body {
-    width: 800px;
-    margin: 0 auto;
-    background-color: white;
-    border-style: solid;
-    border-width: 1px;
-    box-shadow: 3px 3px 10px 10px black;
+  width: 800px;
+  margin: 0 auto;
+  background-color: white;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 3px 3px 10px 10px black;
 }
 
-header img { float: left;
-             margin: 0px 30px 0px 0px;
+header img { 
+  float: left;
+  margin: 0px 30px 0px 0px;
 }
 
 #ttl1 { 
-     font-size: 40px;
-       font-weight: 800; 
+  font-size: 40px;
+  font-weight: 800; 
        
 }
 #ttle:first-letter {
-    font-size: 50px;
+  font-size: 50px;
     
 }
 
-li { padding-bottom: 5px; 
+li { 
+  padding-bottom: 5px; 
 }
 
-a:link { color: orange;
-         font-weight: bold;
+a:link { 
+  color: orange;
+  font-weight: bold;
 }
 
-a:hover { color: green; 
+a:hover { 
+  color: green; 
 }
 
 footer {
-    border-top: 1px solid black;
-    font-size: 14px;
-    text-align: center;
-    background: linear-gradient(to top right, black, orange, white);
-    padding: 20px;
+  border-top: 1px solid black;
+  font-size: 14px;
+  text-align: center;
+  background: linear-gradient(to top right, black, orange, white);
+  padding: 20px;
 }
