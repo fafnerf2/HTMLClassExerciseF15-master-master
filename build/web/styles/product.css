@@ -140,7 +140,7 @@ nav li a {
 }
 
 
-.topmenu li:hover > a {
+.tmenu li:hover > a {
   background: grey;
   color: black;
   position: relative;
@@ -172,7 +172,7 @@ ul.submenu li a {
   white-space: nowrap;
 }
 
-.topmenu li:hover ul {
+.tmenu li:hover ul {
   left: 0;
 }
 
