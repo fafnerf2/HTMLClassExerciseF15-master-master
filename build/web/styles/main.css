@@ -93,6 +93,7 @@ ul, li {
     padding: 2em;
     padding: .2em 0 .2em 1em;
     margin-bottom: .2em;
+    color: black;
     
     width: 8em;
     background-color: orange;
@@ -133,10 +134,7 @@ a:hover {
   color: green; 
 }
 
-
-
-
-#horiznav li:first-child a
+#horiznav li a:active
 {
     color: orange;
 } 

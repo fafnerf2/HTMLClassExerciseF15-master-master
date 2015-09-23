@@ -18,6 +18,7 @@ header {
 
 
 body {
+  
   width: 800px;
   margin: 0 auto;
   background-color: white;
@@ -81,25 +82,32 @@ ul, li {
 }
 #horiznav ul li a:hover { background: gray;
 }
+#horiznav a:active {
+    color: orange;
+}
 
 
 
 #leftnav a {
     display: block;
     float:left;
-    //width: 160px;
+    color: black;
     line-height: 2em;
     margin: 0px;
     padding: 2em;
     padding: .2em 0 .2em 1em;
     margin-bottom: .2em;
-    color: black;
     
     width: 8em;
     background-color: orange;
     border:black solid medium;
+    font-weight: bold;
 }
 
+#leftnav a:hover {
+    color: green;
+    
+}
 #content {
     padding-left: 180px;
     border-left: 1px;
@@ -121,23 +129,16 @@ ul {
 }
 
 li { 
+    color: black;
   padding-bottom: 5px; 
   
 }
 
-a:link { 
-  color: orange;
-  font-weight: bold;
-}
 
-a:hover { 
+#leftnav a:hover { 
   color: green; 
 }
-
-#horiznav li a:active
-{
-    color: orange;
-} 
+ 
 
 footer {
   border-top: 1px solid black;
