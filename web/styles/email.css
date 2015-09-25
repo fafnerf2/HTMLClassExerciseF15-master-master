@@ -69,11 +69,10 @@ ul, li {
 * {
     margin: 0; padding: 0; 
 }
-#horiznav ul { 
-    //margin: 20px 10px; 
-}
+
 #horiznav ul li { 
     float: left; list-style-type: none; 
+    color: white;
 }
 
 #horiznav ul li a { 
@@ -82,7 +81,7 @@ ul, li {
 }
 #horiznav ul li a:hover { background: gray;
 }
-#horiznav a:active {
+#horiznav ul li a.current {
     color: orange;
 }
 
@@ -126,12 +125,6 @@ ul {
     float: left;
     padding: 0;
     margin: 0;
-}
-
-li { 
-    color: black;
-  padding-bottom: 5px; 
-  
 }
 
 
