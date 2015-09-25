@@ -1,159 +1,274 @@
 
 /* Copyright Colin Hiriak 2015 */
 
-*{
-    font-family: sans-serif;
-   
+*html {
+  background-image: url('../images/bats.gif');
+  background-repeat: repeat;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
 }
 
-html {
-  background-image: url('../images/bats.gif');
+body {
+  width: 800px;
+  background-color: white;
+  border: 2px solid black;
+  /* -webkit-box-shadow: 5px 5px 5px 5px red; */
+  box-shadow: 0 9px 20px 9px black;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+
+a {
+  color: orange;
+  font-weight: bold;
+}
+
+a:hover,
+a:focus {
+  color: green;
+}
+
+li {
+  margin-bottom: .3em;
+}
+
+header img {
+  float: left;
+  margin-right: 2em;
 }
 
 header {
-  border-bottom: 1px solid black;
-  background: linear-gradient(to bottom left, black, orange, white);
+  background: linear-gradient(45deg, white 0%, orange 75%, black 100%);
+  border-bottom: 2px solid black;
+  padding: 1.2em .9em 1.2em .9em;
 }
 
-
-
-body {
-  
-  width: 800px;
-  margin: 0 auto;
-  background-color: white;
-  border-style: solid;
-  border-width: 1px;
-  box-shadow: 3px 3px 10px 10px black;
-}
-
-#container
-{
-margin: 10px auto;
-
-}
-
-header img { 
+aside {
   float: left;
-  margin: 0px 30px 0px 0px;
+  width: 160px;
 }
 
-#ttl1 { 
-  font-size: 40px;
-  font-weight: 800; 
-       
+aside ul, 
+aside li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
 }
 
-#ttl2 {
-    
-}
-#ttle:first-letter {
-  font-size: 50px;
-    
+aside li {
+  margin: 0 0 .2em 1em;
 }
 
-ul, li {
-    //margin-top: 1em;
-    //margin-left: 1em;
-    padding: 0;
-    list-style: none;
+aside li:first-child {
+  margin-top: 1.2em;
 }
 
-#top {
-    padding: 0;
-    margin: 0;
-    
+aside li a {
+
+  background: orange;
+  border: 2px solid black;
+  color: black;
+  display: block;
+  line-height: 2em;
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: .25em;
+  padding-left: .75em;
+  padding-right: .2em;
+  text-decoration: none;
+
 }
 
-
-* {
-    margin: 0; padding: 0; 
+aside li a:last-child {
+  margin-bottom: 0;
 }
 
-#horiznav ul li { 
-    float: left; list-style-type: none; 
-    color: white;
+aside li a:hover {
+  color: black;
+}
+/* microfix hack */
+.cf::before,
+.cf::after {
+  content: "";
+  display: table;
 }
 
-#horiznav ul li a { 
-    background: black; color: white; display: block; font-family: Arial, 
-        Helvetica, sans-serif; padding: 8px 39px; text-decoration: none; 
-}
-#horiznav ul li a:hover { background: gray;
-}
-#horiznav ul li a.current {
-    color: orange;
+.cf ::after {
+  clear: both;
 }
 
-
-
-#leftnav a {
-    display: block;
-    float:left;
-    float: top;
-    color: black;
-    line-height: 2em;
-    margin: 0px;
-    padding: 2em;
-    padding: .2em 0 .2em 1em;
-    margin-bottom: .2em;
-    
-    width: 8em;
-    background-color: orange;
-    border:black solid medium;
-    font-weight: bold;
+nav  {
+  background: black;
+  height: 2em;
 }
 
-#leftnav a:hover {
-    color: green;
-    
-}
-#content {
-    padding-left: 180px;
-    border-left: 1px;
-}
-#bottom {
-    margin-left: 180px;
-    border-left: 1px;
+nav ul,
+nav li {
+  float: left;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+
 }
 
-#footer {
-    clear: both;
+nav ul {
+  background: black;
+  height: 2em;
+  width: 100%;
 }
 
-ul {
-    float: top;
-    //align-content: top;
-    float: left;
-    padding: 0;
-    margin: 0;
+nav li {
+  position: relative;
+  text-align: center;
+  width: 20%;
+
+}
+
+nav li a {
+  color: white;
+  display: block;
+  line-height: 2em;
+  text-decoration: none;
 }
 
 
-#leftnav a:hover { 
-  color: green; 
+.topmenu li:hover > a {
+  background: grey;
+  color: black;
+  position: relative;
 }
- 
-#emailheader {
-    text-align: center;
-    color: black;
-    padding-top: 39px;
+
+nav li a.current {
+  color: orange;
+}
+
+ul.submenu {
+  background: black;
+  float: none;
+  height: auto;
+  left: -9000em;
+  position: absolute;
+  top: 2em;
+  width: 100%;
+}
+
+ul.submenu li {
+  float: none;
+  text-align: center;
+  width: 100%;
+
+}
+
+ul.submenu li a {
+  text-align: center;
+  white-space: nowrap;
+}
+
+.topmenu li:hover ul {
+  left: 0;
+}
+
+ul.submenu li a:hover {
+  background: grey;
+  color: black;
+}
+
+
+h1 {
+  font-size: 1.8em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.17em;
+  margin: 0;
+}
+
+header h1 {
+  color: black;
+  font-style: normal; 
+  margin-bottom: 0;
+  margin-top: 0;
+  /* text-shadow: 2px 2px black; */
+  padding: 0 0 0 3em;
+}
+
+header h2 {
+  margin-top: .2em;
+}
+
+#first-heading {
+  margin-bottom: .2em;
+}
+
+main p {
+  margin-bottom: .5em;
+}
+
+section {
+  float: right;
+  margin: .8em .9em 1.0em;
+  width: 600px;
+}
+
+section h1 {
+  margin-left: 0;
+  padding-left: 0;
+  font-size: 1.5em;
+  font-weight: bold;
 }
 
 label {
-width: 30em;
-margin-right: 1em;
-text-align: right;
+  text-align: right;
+  width: 5em;
+  float: left;
 }
 
-#emailform {
-    text-align: center;
-    font-size: 20px;
+input[type=text],
+input[type=email] {
+  border: 1px solid black;
+  margin-left: .5em;
+  margin-bottom: .2em;
+  width: 20em;
+  
 }
+
+input:focus {
+  background: lightgrey;
+  border: 3px solid black;
+}
+
+input[type=submit] {
+  background: orange;
+  border: 1px solid black;
+  box-shadow: 2px 2px black;
+  padding: .2em 1em;
+  margin-left: 5.5em;
+}
+
+form br {
+  clear: both;
+}
+
 footer {
-  border-top: 1px solid black;
-  font-size: 14px;
+  background: linear-gradient(45deg, black 0%, orange 25%, white 100%);
+  border-top: 2px solid black;
+  clear: both;
+  padding: .9em;
+}
+footer p {
+  font-size: 90%;
   text-align: center;
-  background: linear-gradient(to top right, black, orange, white);
-  padding: 20px;
+
 }
