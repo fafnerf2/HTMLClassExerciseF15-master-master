@@ -141,15 +141,9 @@ ul {
 }
 
 label {
-display: block;
-float: left;
-
-width: 10em;
-
+width: 30em;
 margin-right: 1em;
-
 text-align: right;
-
 }
 
 #emailform {
